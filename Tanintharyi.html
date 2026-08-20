@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Travel around Myanmar">
+    <link rel="stylesheet" href="Main.css">
+
+    <!-- Googl font -->
+
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img class="LOGO" src="T-image/logo.jpg">
+            <h1>Myanmar Traveling</h1>
+        </div>
+        <div class="header-right">
+            <div class="container-Region">
+           <label for="regionSelect" class="Label-Region">Region</label>
+           <select id="regionSelect" onchange="goToRegionLink()">
+            <option value="Main.html" disabled selected> Search Region</option>
+            <option value="Yangon.html">Yangon</option>
+            <option value="Mandalay.html">Mandalay</option>
+            <option value="Sagaing.html">Sagaing</option>
+            <option value="Magway.html">Magway</option>
+            <option value="Bago.html">Bago</option>
+            <option value="Tanintharyi.html">Tanintharyi</option>
+            <option value="Ayeyarwady.html">Ayeyarwady</option>
+            </select>
+            <script>
+                function goToRegionLink(){
+                    const selectElement =document.getElementById("regionSelect");
+                    const targetUrl =selectElement.value;
+
+                    if (targetUrl) {
+                        window.location.href = targetUrl;
+                    }
+                }
+            </script>
+            </div>
+                  <div class="container-State">
+           <label for="stateSelect" class="Label-State">State</label>
+           <select id="stateSelect" onchange="goToStateLink()">
+            <option value="Main.html" disabled selected> Search State</option>
+            <option value="Kachin.html">Kachin</option>
+            <option value="Kayah.html">Kayah</option>
+            <option value="Kayin.html">Kayin</option>
+            <option value="Chin.html">Chin</option>
+            <option value="Mon.html">Mon</option>
+            <option value="Rakhin.html">Rakhin</option>
+            <option value="Shan.html">Shan</option>
+            </select>
+               <script>
+                function goToStateLink(){
+                    const selectElement =document.getElementById("stateSelect");
+                    const targetUrl =selectElement.value;
+
+                    if (targetUrl) {
+                        window.location.href = targetUrl;
+                    }
+                }
+            </script>
+            </div>
+
+            <a class="Contact" href="Contact.html">Contact</a>
+            <a class="Contact" href="Help.html">Help<i class="fa-solid fa-circle-question"></i></a>
+            
+            
+        </div>
+    </div>
+    <!-- Middle -->
+    <!-- Places Grid Layout -->
+    <div class="places-grid">
+
+  <!-- Place 1: Mergui Archipelago -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Mergui Archipelago.jpg" alt="Mergui Archipelago Islands">
+      <span class="place-badge">Top Attraction</span>
+    </div>
+    <div class="place-info">
+      <h3>1. Mergui Archipelago (Myeik Islands)</h3>
+      
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Comprising over 800 pristine islands scattered across the Andaman Sea, the Mergui Archipelago is home to the indigenous Moken ethnic group ('Sea Gypsies'). Famous for white-sand beaches, crystal-clear turquoise waters, and untouched coral reefs, it is a world-class diving destination.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>November to April (Calm seas and optimal sunny weather for island hopping)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Andaman Sea, off the coast of Kawthaung and Myeik, Tanintharyi Region</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Day Boat Tour: ~$100 - $150 USD / Multi-day Speedboat Cruise: ~$300+ USD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 2: Maungmagan Beach (Dawei) -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Maungmagan Beach.jpg" alt="Maungmagan Beach Dawei">
+    </div>
+    <div class="place-info">
+      <h3>2. Maungmagan Beach</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Located just 12 km from Dawei, Maungmagan is one of the oldest beach resorts in Myanmar, popular since the British colonial era. Unlike overdeveloped commercial beaches, it offers a peaceful, authentic coastal atmosphere surrounded by lush green hills.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>4:00 PM - 7:00 PM (Ideal for evening walks, fresh seafood, and watching the sunset)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Dawei Township, Tanintharyi Region</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Free Beach Access / Fresh Seafood Meals: ~15,000 - 30,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 3: Grand Father Beach (San Maria Beach) -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Grand Father Beach .jpg" alt="Grand Father Beach Dawei Peninsula">
+    </div>
+    <div class="place-info">
+      <h3>3. Grand Father Beach (Po Po Kyauk Beach)</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Situated on the scenic Dawei Peninsula, Grand Father Beach is renowned for its vast expanse of pure white sand, clear blue waters, and pristine natural beauty. It remains one of the most breathtaking undeveloped beaches in Southeast Asia.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>9:00 AM - 4:00 PM (Great for swimming and day trips along the peninsula)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Dawei Peninsula, Launglon Township, Tanintharyi Region</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Free Access / Motorbike Rental from Dawei: ~15,000 - 20,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 4: Kawthaung (Victoria Point) -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Kawthaung.jpg" alt="Kawthaung Victoria Point">
+    </div>
+    <div class="place-info">
+      <h3>4. Kawthaung & Victoria Point</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Formerly known as Victoria Point during British rule, Kawthaung is the southernmost town of Myanmar, separated from Ranong, Thailand by the Kra Buri River. It features the statue of King Bayinnaung overlooking the sea and serves as the gateway to the Mergui Islands.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>8:00 AM - 6:00 PM (Explore Bayinnaung Hill, Maliwan Waterfall, and hot springs)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Southernmost Tip, Kawthaung District, Tanintharyi Region</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Free Exploration / Longtail Boat across to Thailand: ~300 THB / 20,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 5: Myeik Colonial Old Town -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Myeik Colonial Old Town.jpg" alt="Myeik Old Town Heritage">
+    </div>
+    <div class="place-info">
+      <h3>5. Myeik Heritage Old Town & Harbor</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Myeik (Mergui) was a major international trading seaport for centuries, frequented by Portuguese, Dutch, British, and Siamese traders. The town retains historic wooden colonial architecture, bustling seafood markets, bird's nest factories, and pearl farming centers.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>7:00 AM - 11:00 AM (Morning fish market) / 4:30 PM - 6:30 PM (Harbor walking)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Myeik Waterfront, Myeik Township, Tanintharyi Region</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Free Entry / Local Trishaw/Tuk-tuk Town Tour: ~10,000 - 15,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Back to Main Page Button -->
+<div class="back-home-container">
+  <a href="Main.html" class="back-main-btn">
+    <i class="fa-solid fa-house"></i> Back to Main Page
+  </a>
+</div>
+
+
+     <!-- Middle -->
+      <hr class="hr">
+    <!-- Footer -->
+     <div class="Footer">
+        <h3 class="Information"><i class="fa-solid fa-headset"></i> Information</h3>
+        <table class="Infor">
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-building"></i></div> Name</th>
+                <th>Myanmar Traveling@Co.Ltd</th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-location-dot"></i></div> Adress</th>
+                <th><a class="ALink" href="https://maps.app.goo.gl/Tqb5P3sugFnrtwvx6">Naha,Okinawa,900-0024</a></th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-phone"></i></div> Phone</th>
+                <th>080-9856-5357</th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-clock"></i></div> Hour</th>
+                <th>24 Hours</th>
+            </tr>
+        </table>
+     </div>
+
+    <!-- Footer -->
+     <!-- Copyright -->
+      <div class="Copyright">
+        <small>&copy:GEMINI</small>
+        <p>Myanmar Traveling@Co.Ltd by Minthantzin</p>
+      </div>
+
+    
+</body>
+</html>

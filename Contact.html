@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Myanmar Traveling</title>
+  <link rel="stylesheet" href="Contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="T-image/logo.jpg" alt="Travel Myanmar Logo" class="logo-img" onerror="this.src='https:/via.placeholder.com/50'">
+      <h1 class="brand-title">Myanmar Traveling</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="Main.html">Home</a>
+      <a href="Help.html">Help</a>
+      <a href="Contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact-hero">
+    <div class="hero-title-container">
+      <h2>Contact Our Team</h2>
+      <!-- Main Page သို့ ပြန်သွားရန် ခလုတ်အပြာလေး -->
+      <a href="Main.html" class="back-main-btn">
+        <i class="fa-solid fa-house"></i> Back to Main Page
+      </a>
+    </div>
+    <p>"We're here to help you explore Myanmar. Feel free to reach out to us anytime."</p>
+  </section>
+
+  <!-- Main Content Grid -->
+  <main class="contact-container">
+
+    <!-- Left Side: Office Info Cards -->
+    <div class="info-side">
+      <h3><i class="fa-solid fa-headset"></i> Contact Information</h3>
+      
+      <div class="info-card">
+        <div class="info-icon"><i class="fa-solid fa-building"></i></div>
+        <div class="info-details">
+          <h4>Company Name</h4>
+          <p>Myanmar Traveling@Co.,Ltd</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="info-details">
+          <h4>Head Office Address</h4>
+          <p>Naha, Okinawa, 900-0024, Japan</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="info-details">
+          <h4>Phone Numbers</h4>
+          <p>Main: 080-9856-5357</p>
+          <p>Hotline: 060-9896-6367</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div class="info-details">
+          <h4>Email Support</h4>
+          <p>minthantzim30@gmail.com</p>
+          <p>w28017@osfl.ac.jp</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+        <div class="info-details">
+          <h4>Business Hours</h4>
+          <p>24 Hours / 7 Days Open</p>
+        </div>
+      </div>
+
+      <!-- Quick Help Banner -->
+      <div class="quick-help-box">
+        <i class="fa-solid fa-circle-question"></i>
+        <div>
+          <h4>Have Frequently Asked Questions?</h4>
+          <p>You can read more on our <a href="Help.html">Help Center Page</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side: Contact Form -->
+    <div class="form-side">
+      <h3><i class="fa-solid fa-paper-plane"></i> Send Us a Message</h3>
+      <form class="contact-form">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Eg -山田" required>
+        </div>
+
+        <div class="form-group-row">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="example@gmail.com" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="xxx-xxxx-xxxx">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Topic / Subject</label>
+          <select>
+            <option>General Inquiry </option>
+            <option>Tour Booking </option>
+            <option>Payment & Refund</option>
+            <option>Feedback / Complaint</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Your Message </label>
+          <textarea rows="5" placeholder="Please describe your Inquiry or details here..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- Google Map Section -->
+  <section class="map-section">
+    <h3><i class="fa-solid fa-map-location-dot"></i> Our Office Location</h3>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57271.74810793613!2d127.64364413551523!3d26.212401314643355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5697141a1208d%3A0x46fcb9ed49a5b3a6!2sNaha%2C%20Okinawa!5e0!3m2!1sen!2sjp!4v1710000000000!5m2!1sen!2sjp" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© Myanmar Traveling@Co.Ltd by Minthantzin</p>
+  </footer>
+
+</body>
+</html>

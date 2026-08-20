@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Travel around Myanmar">
+    <link rel="stylesheet" href="Main.css">
+
+    <!-- Googl font -->
+
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img class="LOGO" src="T-image/logo.jpg">
+            <h1>Myanmar Traveling</h1>
+        </div>
+        <div class="header-right">
+            <div class="container-Region">
+           <label for="regionSelect" class="Label-Region">Region</label>
+           <select id="regionSelect" onchange="goToRegionLink()">
+            <option value="Main.html" disabled selected> Search Region</option>
+            <option value="Yangon.html">Yangon</option>
+            <option value="Mandalay.html">Mandalay</option>
+            <option value="Sagaing.html">Sagaing</option>
+            <option value="Magway.html">Magway</option>
+            <option value="Bago.html">Bago</option>
+            <option value="Tanintharyi.html">Tanintharyi</option>
+            <option value="Ayeyarwady.Html">Ayeyarwady</option>
+            </select>
+            <script>
+                function goToRegionLink(){
+                    const selectElement =document.getElementById("regionSelect");
+                    const targetUrl =selectElement.value;
+
+                    if (targetUrl) {
+                        window.location.href = targetUrl;
+                    }
+                }
+            </script>
+            </div>
+                  <div class="container-State">
+           <label for="stateSelect" class="Label-State">State</label>
+           <select id="stateSelect" onchange="goToStateLink()">
+            <option value="Main.html" disabled selected> Search State</option>
+            <option value="Kachin.html">Kachin</option>
+            <option value="Kayah.html">Kayah</option>
+            <option value="Kayin.html">Kayin</option>
+            <option value="Chin.html">Chin</option>
+            <option value="Mon.html">Mon</option>
+            <option value="Rakhin.html">Rakhin</option>
+            <option value="Shan.html">Shan</option>
+            </select>
+               <script>
+                function goToStateLink(){
+                    const selectElement =document.getElementById("stateSelect");
+                    const targetUrl =selectElement.value;
+
+                    if (targetUrl) {
+                        window.location.href = targetUrl;
+                    }
+                }
+            </script>
+            </div>
+
+            <a class="Contact" href="Contact.html">Contact</a>
+            <a class="Contact" href="Help.html">Help<i class="fa-solid fa-circle-question"></i></a>
+            
+            
+        </div>
+    </div>
+    <!-- Middle -->
+    <!-- Places Grid Layout -->
+    <div class="places-grid">
+
+  <!-- Place 1: Mount Victoria (Nat Ma Taung) -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Mount Victoria.jpg" alt="Mount Victoria Nat Ma Taung">
+      <span class="place-badge">Top Attraction</span>
+    </div>
+    <div class="place-info">
+      <h3>1. Mount Victoria (Nat Ma Taung / Khonuamthung)</h3>
+      
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Standing at 3,053 meters, Mount Victoria is the highest peak in Chin State and the third highest in Myanmar. Located inside Nat Ma Taung National Park, an ASEAN Heritage Park, it is renowned for its rare white white-browed nuthatch birds, native rhododendron forests, and sea-of-clouds vistas.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>November to February (Best for blooming red/white rhododendrons and clear mountain views)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Kanpetlet Township, Southern Chin State</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Park Entry: Free / Motorbike/4WD Trek transport: ~30,000 - 50,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 2: Rih Lake -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Rih Lake.jpg" alt="Rih Lake Heart Shaped Lake">
+    </div>
+    <div class="place-info">
+      <h3>2. Rih Lake (Rih Li)</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>A natural heart-shaped lake located right on the Myanmar-India border. According to ancient Chin folklore and indigenous spiritual beliefs, Rih Lake is the gateway through which all departed spirits must pass on their journey to the afterlife.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>October to May (Serene atmosphere, crystal-clear water reflections)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Falam Township, Northern Chin State (near Zokhawthar border)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Free Access / Local Boat Tour around Lake: ~10,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 3: Mindat & Kanpetlet Ethnic Villages -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Mindat & Kanpetlet Ethnic Villages.jpg" alt="Tattooed Face Chin Women">
+    </div>
+    <div class="place-info">
+      <h3>3. Mindat & Kanpetlet Traditional Villages</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Mindat and Kanpetlet are cultural centers home to the Dai, Muun, and Ya ethnic tribes. These towns are famous for their ancient traditions, unique musical flute playing using the nose, and elder women with intricate full-face facial tattoos.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>8:00 AM - 4:00 PM (Great for trekking between remote mountain villages)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Mindat & Kanpetlet Townships, Southern Chin State</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Trekking Guide Fee: ~25,000 - 40,000 MMK per day</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 4: Hakha City & Timit Valley -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Hakha City & Timit Valley.webp" alt="Hakha Capital Chin State">
+    </div>
+    <div class="place-info">
+      <h3>4. Hakha City & Timit Valley</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Hakha is the capital of Chin State, built on a steep mountain slope at an elevation of 1,867 meters. Surrounded by pine forests and scenic valleys like Timit, it offers stunning mountain scenery and colorful Lai Chin culture.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>7:00 AM - 5:00 PM (Visit Hakha Viewpoint Peak for morning sea of clouds)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Hakha Township, Northern Chin State</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Free Exploration / Local Motorbike Taxi: ~5,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 5: Bungtla Waterfall -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Bungtla Waterfall.jpg" alt="Bungtla Waterfall Chin State">
+    </div>
+    <div class="place-info">
+      <h3>5. Bungtla Waterfall (Bungtla Vawnh)</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Bungtla Waterfall is one of the longest and most impressive multi-tiered cascades in Chin State, tumbling down nine distinct stone steps amidst deep virgin mountain jungle. It is an adventurous destination for nature lovers and hikers.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>October to January (Flowing water is clear and jungle trails are safe)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Matupi Township, Central-Southern Chin State</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Free Entry / Local Trail Guide: ~15,000 - 20,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Back to Main Page Button -->
+<div class="back-home-container">
+  <a href="Main.html" class="back-main-btn">
+    <i class="fa-solid fa-house"></i> Back to Main Page
+  </a>
+</div>
+
+
+     <!-- Middle -->
+      <hr class="hr">
+    <!-- Footer -->
+     <div class="Footer">
+        <h3 class="Information"><i class="fa-solid fa-headset"></i> Information</h3>
+        <table class="Infor">
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-building"></i></div> Name</th>
+                <th>Myanmar Traveling@Co.Ltd</th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-location-dot"></i></div> Adress</th>
+                <th><a class="ALink" href="https://maps.app.goo.gl/Tqb5P3sugFnrtwvx6">Naha,Okinawa,900-0024</a></th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-phone"></i></div> Phone</th>
+                <th>080-9856-5357</th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-clock"></i></div> Hour</th>
+                <th>24 Hours</th>
+            </tr>
+        </table>
+     </div>
+
+    <!-- Footer -->
+     <!-- Copyright -->
+      <div class="Copyright">
+        <small>&copy:GEMINI</small>
+        <p>Myanmar Traveling@Co.Ltd by Minthantzin</p>
+      </div>
+
+    
+</body>
+</html>

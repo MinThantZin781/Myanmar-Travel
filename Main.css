@@ -1,0 +1,502 @@
+
+@charset "UTF-8";
+@keyframes pageFadeIn{
+    0%{
+        opacity: 0;
+        transform: translate(15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    animation: pageFadeIn 0.5s ease-out forwards;
+}
+
+
+        /* header */
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color:  #f8f9fa;
+    border-bottom: 1px solid #eeeeee;
+    padding: 12.5px 12.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left{
+    
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+    color:  #1a5276;
+    font-size: 17.5px;
+    font-family: 'Brush Script MT';
+    
+}
+.LOGO{
+    width: 75px;
+    height: 75px;
+    border-radius: 60%;
+    object-fit: cover;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* header-right */
+.header-right{
+    font-family: 'Brush Script MT';
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color:  #1a73e8;
+    margin-right: 15px;
+}
+.Contact{
+    text-decoration: none;
+    color:  #1a73e8;
+    font-family: 'Brush Script MT';
+}
+
+  
+        /* Header */
+
+        /* Footer */
+.Footer{
+    background-color: white;
+    padding: 10px;
+}
+.Infor{
+    width: 100%;
+    max-width: 277px;
+    margin: auto;
+    padding: o 1.5rem;
+    border-spacing: 0;
+    font-family: 'Brush Script MT';
+    font-size: 12.5px;
+}        
+.Infor th,
+.Infor td {
+    border-bottom: 1px solid #1a73e8;
+}
+.Infor th{
+    text-align: center;
+    font-weight: normal;
+    padding: 0.75rem;
+}
+.Infor td {
+    padding: 0.75rem 0;
+}
+.ALink{
+    text-decoration: none;
+    color: black;
+}
+.Information{
+    font-family: 'Brush Script MT';
+    text-align: center;
+    font-size: 17.5px;
+    color: #1a73e8;
+}
+        /* Footer */
+    /* Copright */
+.Copyright{
+    background-color: #f8f9fa;
+    border-top: 1px solid #eeeeee;
+    color: #1a73e8;
+    padding: 10px;
+    text-align: center;
+    margin: 0%;
+    font-size: 7.5px;
+}   
+    /* Copyright */
+
+
+    /* Middle-Main */
+.Middle-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.Middle-Main{
+    background-image: url(T-image/Myanmar_districts_Map_\(current\).svg);
+    background-repeat: no-repeat;
+    background-position-x: 175px;
+    background-size: contain;
+    height: 950px;
+    font-family: 'Brush Script MT';
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+} 
+
+/* koko */
+.Yangon{
+    width: 62.5px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 50px;
+    transition: 0.7s;
+
+}
+.Region{
+    width: 62.5px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 50px;
+    transition: 0.7s;
+}
+.Yangon:hover{
+    translate: 15px;
+    rotate: -5deg;
+}
+.Region:hover{
+      translate: 15px;
+    rotate: -5deg;
+}
+/* Video */
+.Middle-Main-Right{  
+    flex: 1;
+    justify-content: center;
+    padding: 10px;
+}
+.Middle-Main-Right iframe{
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    
+}
+
+
+.places-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 35px; /* Card တစ်ခုနဲ့တစ်ခု အကွာအဝေး */
+}
+
+.place-card {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.place-img-box {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background-color: #eef2f5;
+}
+
+.place-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.place-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #0066cc;
+  color: #ffffff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.place-info {
+  padding: 25px;
+}
+
+.place-info h3 {
+  color: #1a5276;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eef2f5;
+  padding-bottom: 10px;
+}
+
+/* History Section */
+.info-section h4 {
+  color: #2c3e50;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-section h4 i {
+  color: #0066cc;
+}
+
+.info-section p {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Meta Details Grid (Time, Location, Cost) */
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  background-color: #f8fafc;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #edf2f7;
+}
+
+.meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.meta-item i {
+  color: #0066cc;
+  font-size: 1.2rem;
+  margin-top: 3px;
+}
+
+.meta-item strong {
+  display: block;
+  color: #2d3748;
+  font-size: 0.85rem;
+  margin-bottom: 2px;
+}
+
+.meta-item span {
+  color: #718096;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+/* Back to Main Page Button Styling */
+.back-home-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #f1f3f5;
+}
+
+.back-main-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #0066cc;
+  color: #ffffff !important;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.25);
+  transition: all 0.3s ease;
+}
+
+.back-main-btn:hover {
+  background-color: #004999;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 102, 204, 0.35);
+}
+
+   /* Responsive Mobile Adjustments */
+@media screen and (max-width: 850px) {
+  .meta-grid {
+    grid-template-columns: 1fr; /* ဖုန်းထဲမှာ Time, Location, Cost ကို အပေါ်အောက် တန်းစီပေးမည် */
+    gap: 12px;
+  }
+  
+  .place-img-box {
+    height: 200px;
+  }
+
+  .place-info {
+    padding: 18px;
+  }
+}
+
+.place-img-box {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background-color: #eef2f5;
+  overflow: hidden; /* အပြင်ဘက် ထွက်မသွားစေရန် */
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.place-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ပုံမှန်အချိန်တွင် အကွက်ပြည့် အချိုးကျ ပြမည် */
+  transition: transform 0.4s ease, object-fit 0.4s ease;
+}
+
+/* Mouse တင်လိုက်ချိန်တွင် ပုံတစ်ပုံလုံး အပြည့်ပေါ်စေခြင်း */
+.place-img-box:hover img {
+  object-fit: contain; /* ပုံမပြတ်ဘဲ အပြည့်အစုံ မြင်ရမည် */
+  background-color: white; /* ပုံဘေးပတ်လည် အနက်ရောင် နောက်ခံပေးမည် */
+  transform: scale(1.03); /* အနည်းငယ် ကြီးလာမည် */
+}
+
+ /* Phone size  koko kara */
+@media screen and (max-width: 992px) {
+  .Middle-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Middle-Main {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: 40%;
+    padding-bottom: 20px;
+  }
+
+  .Middle-Main-Right {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .Middle-Main-Right iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 315px;
+  }
+}
+
+/* (Max-width: 768px) */
+@media screen and (max-width: 768px) {
+  /* Header Adjustments */
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 10px;
+  }
+
+  .header-left {
+    margin-left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-left h1 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .LOGO {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header-right {
+    margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+  }
+  .container-Region select,
+  .container-State select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #1a73e8;
+    background-color: #ffffff;
+    max-width: 140px;
+  }
+
+  /* Region / State Selection Area */
+  .Middle-Main-Region {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 15px 15px;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .Yangon,
+  .Region {
+    margin-left: 0;
+    margin-top: 0;
+    width: 55px;
+    height: 55px;
+    display: block;
+    margin: 0 auto 5px auto;
+  }
+  .Middle-Main-Right {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .Middle-Main-Right iframe {
+    width: 100%;
+    height: 220px;
+  }
+
+  /* Footer Adjustment */
+  .Infor {
+    max-width: 100%;
+    font-size: 13px;
+  }
+
+  .Infor th,
+  .Infor td {
+    padding: 10px 5px;
+  }
+}
+
+/* 3. Small Screen Phones (Max-width: 480px - e.g., iPhone SE, Galaxy A series) */
+@media screen and (max-width: 480px) {
+  .header-right {
+    gap: 8px;
+  }
+
+  .Label-Region,
+  .Label-State {
+    display: none; /* Hide labels on ultra-narrow screens to conserve horizontal space */
+  }
+
+  .Middle-Main-Region {
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row grid */
+    font-size: 13px;
+  }
+
+  .Yangon,
+  .Region {
+    width: 48px;
+    height: 48px;
+  }
+
+  .Copyright {
+    font-size: 9px;
+    padding: 12px 5px;
+  }
+}

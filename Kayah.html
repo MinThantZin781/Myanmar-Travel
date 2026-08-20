@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Travel around Myanmar">
+    <link rel="stylesheet" href="Main.css">
+
+    <!-- Googl font -->
+
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img class="LOGO" src="T-image/logo.jpg">
+            <h1>Myanmar Traveling</h1>
+        </div>
+        <div class="header-right">
+            <div class="container-Region">
+           <label for="regionSelect" class="Label-Region">Region</label>
+           <select id="regionSelect" onchange="goToRegionLink()">
+            <option value="Main.html" disabled selected> Search Region</option>
+            <option value="Yangon.html">Yangon</option>
+            <option value="Mandalay.html">Mandalay</option>
+            <option value="Sagaing.html">Sagaing</option>
+            <option value="Magway.html">Magway</option>
+            <option value="Bago.html">Bago</option>
+            <option value="Tanintharyi.html">Tanintharyi</option>
+            <option value="Ayeyarwady.Html">Ayeyarwady</option>
+            </select>
+            <script>
+                function goToRegionLink(){
+                    const selectElement =document.getElementById("regionSelect");
+                    const targetUrl =selectElement.value;
+
+                    if (targetUrl) {
+                        window.location.href = targetUrl;
+                    }
+                }
+            </script>
+            </div>
+                  <div class="container-State">
+           <label for="stateSelect" class="Label-State">State</label>
+           <select id="stateSelect" onchange="goToStateLink()">
+            <option value="Main.html" disabled selected> Search State</option>
+            <option value="Kachin.html">Kachin</option>
+            <option value="Kayah.html">Kayah</option>
+            <option value="Kayin.html">Kayin</option>
+            <option value="Chin.html">Chin</option>
+            <option value="Mon.html">Mon</option>
+            <option value="Rakhin.html">Rakhin</option>
+            <option value="Shan.html">Shan</option>
+            </select>
+               <script>
+                function goToStateLink(){
+                    const selectElement =document.getElementById("stateSelect");
+                    const targetUrl =selectElement.value;
+
+                    if (targetUrl) {
+                        window.location.href = targetUrl;
+                    }
+                }
+            </script>
+            </div>
+
+            <a class="Contact" href="Contact.html">Contact</a>
+            <a class="Contact" href="Help.html">Help<i class="fa-solid fa-circle-question"></i></a>
+            
+            
+        </div>
+    </div>
+    <!-- Middle -->
+    <!-- Places Grid Layout -->
+    <div class="places-grid">
+
+  <!-- Place 1: Taung Kwe Pagoda -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Taung Kwe Pagoda.jpg" alt="Taung Kwe Pagoda">
+      <span class="place-badge">Top Attraction</span>
+    </div>
+    <div class="place-info">
+      <h3>1. Taung Kwe Pagoda (Thiri Mingalar Taung Kwe)</h3>
+      
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Perched dramatically atop a split limestone crag in Loikaw, Taung Kwe Pagoda is the most famous landmark in Kayah State. Built piece by piece across separate rock pinnacles, it offers breathtaking 360-degree views of Loikaw town and surrounding blue mountains.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>5:00 PM - 7:00 PM (Stunning panoramic sunset and illuminated nighttime view)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Downtown Loikaw, Kayah State</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Free Entry / Elevator access available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 2: Pan Pet Village -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Pan Pet Village.jpg" alt="Pan Pet Kayan Village">
+    </div>
+    <div class="place-info">
+      <h3>2. Pan Pet Village (Kayan Ethnic Village)</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Home to the Kayan Lahwi ethnic community, famously known for their women who wear traditional brass neck coils. Pan Pet is a pioneer in community-based tourism, offering visitors an authentic cultural experience and local handicrafts.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>9:00 AM - 3:00 PM (Great for community trekking and cultural interaction)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Demoso Township, Kayah State (approx. 1 hour drive from Loikaw)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Community Tour Guide Fee: ~15,000 - 25,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 3: Htee Pree Blue Lake -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Htee Pree Blue Lake.webp" alt="Htee Pree Blue Lake">
+    </div>
+    <div class="place-info">
+      <h3>3. Htee Pree Blue Lake (7 Stage Lake / Htee Mue Htee)</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>A pristine natural pond set amidst farmland and mountains, Htee Pree is famous for its vibrant turquoise-blue water caused by natural mineral deposits. It is considered a sacred water site by local villagers.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>8:30 AM - 4:00 PM (Best in bright daylight when the blue color pops)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Demoso Township, Kayah State</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Free Entry / Local snacks and drinks nearby: ~3,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 4: Kyat Cave -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Kyat Cave.webp" alt="Kyat Cave Loikaw">
+    </div>
+    <div class="place-info">
+      <h3>4. Kyat Cave (Yway Ngu / Ghost Cave)</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>An impressive 2.2 km long natural limestone cave containing mysterious ancient wooden coffins dating back hundreds of years. Local folklore connects the cave to spirits and ancient cave-dwelling tribes.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>9:00 AM - 3:30 PM (Torch/flashlight and local guide required inside)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>15 km east of Loikaw, Kayah State</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Local Guide & Flashlight Rental: ~5,000 - 10,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 5: Hser Mu Lake & Lawpita Waterfall -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Hser Mu Lake & Lawpita Waterfall.jpg" alt="Lawpita Hydroelectric and Falls">
+    </div>
+    <div class="place-info">
+      <h3>5. Lawpita Waterfalls & Hser Mu Lake</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Lawpita is historical as the site of Myanmar's first major hydroelectric power project, fed by Bilu Creek. The surrounding scenic landscape features lush valleys, tranquil lakes, and cascading natural waterfalls.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>10:00 AM - 4:00 PM (Great for scenic day drives around Loikaw valley)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Lawpita Area, 20 km south of Loikaw, Kayah State</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Free Access / Motorbike or Car Taxi Rental from Loikaw</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Back to Main Page Button -->
+<div class="back-home-container">
+  <a href="Main.html" class="back-main-btn">
+    <i class="fa-solid fa-house"></i> Back to Main Page
+  </a>
+</div>
+
+
+     <!-- Middle -->
+      <hr class="hr">
+    <!-- Footer -->
+     <div class="Footer">
+        <h3 class="Information"><i class="fa-solid fa-headset"></i> Information</h3>
+        <table class="Infor">
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-building"></i></div> Name</th>
+                <th>Myanmar Traveling@Co.Ltd</th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-location-dot"></i></div> Adress</th>
+                <th><a class="ALink" href="https://maps.app.goo.gl/Tqb5P3sugFnrtwvx6">Naha,Okinawa,900-0024</a></th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-phone"></i></div> Phone</th>
+                <th>080-9856-5357</th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-clock"></i></div> Hour</th>
+                <th>24 Hours</th>
+            </tr>
+        </table>
+     </div>
+
+    <!-- Footer -->
+     <!-- Copyright -->
+      <div class="Copyright">
+        <small>&copy:GEMINI</small>
+        <p>Myanmar Traveling@Co.Ltd by Minthantzin</p>
+      </div>
+
+    
+</body>
+</html>

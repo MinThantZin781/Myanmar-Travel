@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Center - Travel Myanmar</title>
+  <style>
+    @keyframes pageFadeIn {
+        0%{
+            opacity: 0;
+            transform: translate(15px);
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #333333;
+      line-height: 1.6;
+
+
+      animation: pageFadeIn 0.5s ease-out forwards;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    header h1 {
+      color: #1a5276;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .search-box {
+      max-width: 600px;
+      margin: 20px auto 0;
+      display: flex;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 14px 18px;
+      border: 2px solid #dddddd;
+      border-radius: 6px 0 0 6px;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .search-box button {
+      padding: 14px 30px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 0 6px 6px 0;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .search-box button:hover{
+        background-color: #0b5ed7;
+        transition: 0.3 ease-in-out;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .faq-section {
+      margin-bottom: 40px;
+    }
+    .faq-section :hover{
+        transform: translate(-15px);
+        box-shadow: 0 4px 10px rgba(0,0,0.05);
+    }
+    .faq-section h2 {
+      border-bottom: 2px solid #1a73e8;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      color: #222222;
+      font-size: 22px;
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 18px;
+      background-color: #ffffff;
+    }
+
+    .faq-item h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
+      color: #1a73e8;
+    }
+
+    .contact-card {
+      background-color: #f9f9f9;
+      padding: 25px;
+      border-radius: 8px;
+      border-left: 5px solid #1a73e8;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 15px;
+      color: #222222;
+    }
+
+    .contact-card p {
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    .contact-card a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px){
+      header{
+        padding: 10px 5px;
+      }
+      header h1{
+        font-size: 20px;
+      }
+      .search-box{
+        display: flex !important;
+        flex-direction: row;
+        width: 100%;
+        max-width: 100%;
+        gap: 10px;
+      }
+      .search-box input{
+        flex: 1;
+        width: auto;
+        font-size: 14px;
+        padding: 10px 12px;
+        border-radius: 6px;
+        
+      }
+      .search-box button{
+        width: auto;
+        font-size: 14px;
+        padding: 10px 16px;
+        border-radius: 6px;
+      }
+      .container{
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+        margin: 15px auto;
+      }
+      .faq-section h2{
+        font-size: 18px;
+      }
+      .faq-section :hover,
+      .faq-section:hover,
+      .faq-section:active,
+      .faq-item:hover,
+      .faq-item:active{
+        transform: none !important;
+        box-shadow: none !important;
+        
+      }
+      .faq-item{
+        padding: 12px;
+      }
+      .contact-card{
+        padding: 1px;
+      }
+      
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Travel Myanmar Help Center</h1>
+    <p>Need help? Search for topics or ask your questions directly below.</p>
+    <div class="search-box">
+      <input type="text" placeholder="Search questions or topics...">
+      <button>Search</button>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Section 1: Trip Cancellation and Modification -->
+    <section class="faq-section">
+      <h2>1. Trip Cancellation & Amendments</h2>
+      
+      <div class="faq-item">
+        <h3>How do I cancel my booking?</h3>
+        <p>Log in to your Account, go to the <strong>"My Bookings"</strong> section, select the trip you wish to cancel, and click <strong>"Cancel Booking"</strong>.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Will I get a refund if I cancel my trip?</h3>
+        <p>A 100% refund will be provided for cancellations made at least 7 days prior to departure. A 50% refund applies for cancellations made 3 to 6 days prior, and no refund is provided for cancellations made within 48 hours.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I change my travel dates or passenger name?</h3>
+        <p>Date or passenger name changes are free of charge up to 3 days before departure. Additional service fees may apply for changes requested closer to the travel date.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What happens if a trip is cancelled due to weather or emergency?</h3>
+        <p>If the company cancels a trip, a full refund (100%) will be issued or you may reschedule to another suitable date free of charge.</p>
+      </div>
+    </section>
+
+    <!-- Section 2: Payment and Invoice -->
+    <section class="faq-section">
+      <h2>2. Payments & Invoices</h2>
+
+      <div class="faq-item">
+        <h3>Which payment methods are supported?</h3>
+        <p>We accept KBZPay, WavePay, CBPay, AYA Pay, as well as direct payments via Visa and Mastercard.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I confirm if my payment was successful?</h3>
+        <p>Once the payment is successful, a Booking Confirmation Email and SMS will be sent to you automatically.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What should I do if my payment fails?</h3>
+        <p>If funds were deducted from your account but you did not receive confirmation, please contact Customer Support with your Transaction ID.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I request an Official Invoice/Receipt?</h3>
+        <p>Yes, you can download a PDF invoice directly from the "Download Invoice" button on the "My Bookings" page.</p>
+      </div>
+    </section>
+
+    <!-- Section 3: Booking and Services -->
+    <section class="faq-section">
+      <h2>3. Bookings & Services</h2>
+
+      <div class="faq-item">
+        <h3>What services are included in the trip?</h3>
+        <p>Inclusions depend on the package type, but generally include hotels, transportation, tour guides, and breakfast. Please check specific package details for customized itineraries.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I make individual or group bookings?</h3>
+        <p>Yes. For group travel (more than 10 people), you can contact the Support Desk to request special group discounts.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Are there separate ticket rates for children?</h3>
+        <p>Children under 2 years old travel for free, while children aged 2 to 12 get a 50% discount.</p>
+      </div>
+    </section>
+
+    <!-- Section 4: Visa, Passport, and Regulations -->
+    <section class="faq-section">
+      <h2>4. Visa, Passport & Travel Rules</h2>
+
+      <div class="faq-item">
+        <h3>Do you assist foreign travelers with e-Visa applications?</h3>
+        <p>Yes, we provide free assistance with e-Visa applications for foreign travelers who book trips with us.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What documents do I need to bring during travel?</h3>
+        <p>You must bring your original National Registration Card (NRC) or original Passport.</p>
+      </div>
+    </section>
+
+    <!-- Section 5: Account Management -->
+    <section class="faq-section">
+      <h2>5. Account Management</h2>
+
+      <div class="faq-item">
+        <h3>What should I do if I forget my password?</h3>
+        <p>Click on <strong>"Forgot Password"</strong> on the Login page, and you can reset your password via the verification link sent to your email.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I update my personal information in my account?</h3>
+        <p>Go to Profile Settings to update your phone number, email address, and mailing address anytime.</p>
+      </div>
+    </section>
+
+    <!-- Section 6: Direct Contact -->
+    <section class="faq-section">
+      <h2>6. Direct Contact</h2>
+      <div class="contact-card">
+        <h3>For further inquiries, please contact us:</h3>
+        <p><strong>Primary Email:</strong> <a href="mailto:minthantzinm30@gmail.com">minthantzinm30@gmail.com</a></p>
+        <p><strong>Secondary Email:</strong> <a href="mailto:w26017@osfl.ac.jp">w26017@osfl.ac.jp</a></p>
+        <p><strong>Phone:</strong> <a href="tel:08098565357">080-9856-5357</a></p>
+        <p><strong>Office Hours:</strong> 24 hours</p>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>

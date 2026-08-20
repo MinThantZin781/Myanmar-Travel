@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Travel around Myanmar">
+    <link rel="stylesheet" href="Main.css">
+
+    <!-- Googl font -->
+
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img class="LOGO" src="T-image/logo.jpg">
+            <h1>Myanmar Traveling</h1>
+        </div>
+        <div class="header-right">
+            <div class="container-Region">
+           <label for="regionSelect" class="Label-Region">Region</label>
+           <select id="regionSelect" onchange="goToRegionLink()">
+            <option value="Main.html" disabled selected>Search Region</option>
+            <option value="Yangon.html">Yangon</option>
+            <option value="Mandalay.html">Mandalay</option>
+            <option value="Sagaing.html">Sagaing</option>
+            <option value="Magway.html">Magway</option>
+            <option value="Bago.html">Bago</option>
+            <option value="Tanintharyi.Html">Tanintharyi</option>
+            <option value="Ayeyarwady.html">Ayeyarwady</option>
+            </select>
+            <script>
+                function goToRegionLink(){
+                    const selectElement =document.getElementById("regionSelect");
+                    const targetUrl =selectElement.value;
+
+                    if (targetUrl) {
+                        window.location.href = targetUrl;
+                    }
+                }
+            </script>
+            </div>
+                  <div class="container-State">
+           <label for="stateSelect" class="Label-State">State</label>
+           <select id="stateSelect" onchange="goToStateLink()">
+            <option value="Main.html" disabled selected> Search State</option>
+            <option value="Kachin.html">Kachin</option>
+            <option value="Kayah.html">Kayah</option>
+            <option value="Kayin.html">Kayin</option>
+            <option value="Chin.html">Chin</option>
+            <option value="Mon.html">Mon</option>
+            <option value="Rakhin.html">Rakhin</option>
+            <option value="Shan.html">Shan</option>
+            </select>
+               <script>
+                function goToStateLink(){
+                    const selectElement =document.getElementById("stateSelect");
+                    const targetUrl =selectElement.value;
+
+                    if (targetUrl) {
+                        window.location.href = targetUrl;
+                    }
+                }
+            </script>
+            </div>
+
+            <a class="Contact" href="Contact.html">Contact</a>
+            <a class="Contact" href="Help.html">Help<i class="fa-solid fa-circle-question"></i></a>
+            
+            
+        </div>
+    </div>
+    <!-- Middle -->
+    <!-- Places Grid Layout -->
+    <div class="places-grid">
+        <!-- Place 9: Taukkyan War Cemetery -->
+      <div class="place-card">
+        <div class="place-img-box">
+          <img src="T-image/Taukkyan War Cemetery.jpg" alt="Taukkyan War Cemetery">
+        </div>
+        <div class="place-info">
+          <h3>1. Taukkyan War Cemetery</h3>
+
+          <div class="info-section">
+            <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+            <p>Opened in 1951, this meticulously manicured cemetery is maintained by the Commonwealth War Graves Commission. It serves as the final resting place for over 6,000 Commonwealth soldiers who died fighting in Myanmar during World War II.</p>
+          </div>
+
+          <div class="meta-grid">
+            <div class="meta-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Best Time to Visit</strong>
+                <span>8:00 AM - 5:00 PM (Morning or late afternoon)</span>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <div>
+                <strong>Location</strong>
+                <span>Pyay Road, Taukkyan, Mingaladon Township (North Yangon)</span>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <i class="fa-solid fa-ticket"></i>
+              <div>
+                <strong>Estimated Cost</strong>
+                <span>Free Entrance / Taxi Fare: ~15,000 - 20,000 MMK from Downtown</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Place 10: St. Mary's Cathedral -->
+      <div class="place-card">
+        <div class="place-img-box">
+          <img src="T-image/St.Mary'sCathedral.jpg" alt="St. Mary's Cathedral">
+        </div>
+        <div class="place-info">
+          <h3>2. St. Mary's Cathedral</h3>
+
+          <div class="info-section">
+            <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+            <p>Designed by Dutch architect Jos Cuypers and completed in 1899, St. Mary's Cathedral is the largest Catholic church in Myanmar. It survived both a major earthquake in 1930 and Allied bombing during World War II with minimal damage.</p>
+          </div>
+
+          <div class="meta-grid">
+            <div class="meta-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Best Time to Visit</strong>
+                <span>8:00 AM - 12:00 PM / 3:00 PM - 5:00 PM</span>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <div>
+                <strong>Location</strong>
+                <span>Bogyoke Aung San Road, Botahtaung Township, Yangon</span>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <i class="fa-solid fa-ticket"></i>
+              <div>
+                <strong>Estimated Cost</strong>
+                <span>Free Entry (Please dress respectfully for a place of worship)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Place 1: Shwedagon Pagoda -->
+      <div class="place-card">
+        <div class="place-img-box">
+          <img src="T-image/ShwedagonPagoda.jpg" alt="Shwedagon Pagoda">
+          <span class="place-badge">Top Attraction</span>
+        </div>
+        <div class="place-info">
+          <h3>3. Shwedagon Pagoda</h3>
+          
+          <div class="info-section">
+            <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+            <p>Constructed over 2,600 years ago, Shwedagon Pagoda is believed to be the oldest primary stupa in the world. According to legend, two merchant brothers, Tapussa and Bhallika, met the Gautama Buddha and received eight of his sacred hairs, which are enshrined inside this majestic golden pagoda.</p>
+          </div>
+
+          <div class="meta-grid">
+            <div class="meta-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Best Time to Visit</strong>
+                <span>5:00 AM - 8:00 AM / 4:30 PM - 8:00 PM (Best for Sunset)</span>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <div>
+                <strong>Location</strong>
+                <span>Arzarnee Road, Dagon Township, Yangon</span>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <i class="fa-solid fa-ticket"></i>
+              <div>
+                <strong>Estimated Cost</strong>
+                <span>Entrance Fee: 20,000 MMK (~$10 USD for foreigners) / Free for locals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Place 2: Sule Pagoda -->
+      <div class="place-card">
+        <div class="place-img-box">
+          <img src="T-image/SulePagoda.jpg" alt="Sule Pagoda">
+        </div>
+        <div class="place-info">
+          <h3>4. Sule Pagoda</h3>
+
+          <div class="info-section">
+            <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+            <p>Over 2,500 years old, Sule Pagoda predates Shwedagon itself and is named after the Sule Nat (spirit) who guided the discovery of Shwedagon's hill site. During British colonial rule, the city of Yangon was redesigned with Sule Pagoda as its exact central roundabout point.</p>
+          </div>
+
+          <div class="meta-grid">
+            <div class="meta-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Best Time to Visit</strong>
+                <span>6:00 AM - 8:00 PM (Evening time offers pleasant weather)</span>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <div>
+                <strong>Location</strong>
+                <span>Junction of Sule Pagoda Road and Maha Bandula Road, Downtown Yangon</span>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <i class="fa-solid fa-ticket"></i>
+              <div>
+                <strong>Estimated Cost</strong>
+                <span>Entrance Fee: 10,000 MMK / Taxi Fare: 4,000 - 6,000 MMK from Downtown</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Place 3: Bogyoke Aung San Market -->
+      <div class="place-card">
+        <div class="place-img-box">
+          <img src="T-image/bogyoke-market.jpg" alt="Bogyoke Aung San Market">
+        </div>
+        <div class="place-info">
+          <h3>5. Bogyoke Aung San Market</h3>
+
+          <div class="info-section">
+            <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+            <p>Built in 1926 during British rule, it was originally named Scott Market after the Municipal Commissioner. After Myanmar gained independence in 1948, it was renamed in honor of General Aung San. It is famous for its cobblestone streets and intact colonial architecture.</p>
+          </div>
+
+          <div class="meta-grid">
+            <div class="meta-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Best Time to Visit</strong>
+                <span>10:00 AM - 4:00 PM (Closed on Mondays and Gazette Holidays)</span>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <div>
+                <strong>Location</strong>
+                <span>Bogyoke Aung San Road, Pabedan Township, Yangon</span>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <i class="fa-solid fa-ticket"></i>
+              <div>
+                <strong>Estimated Cost</strong>
+                <span>Free Entry / Shopping & Snacks: 15,000 - 50,000 MMK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div class="back-home-container">
+      <a href="Main.html" class="back-main-btn">
+        <i class="fa-solid fa-house"></i> Back to Main Page
+      </a>
+    </div>
+    </div>
+
+     <!-- Middle -->
+      <hr class="hr">
+    <!-- Footer -->
+     <div class="Footer">
+        <h3 class="Information"><i class="fa-solid fa-headset"></i> Information</h3>
+        <table class="Infor">
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-building"></i></div> Name</th>
+                <th>Myanmar Traveling@Co.Ltd</th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-location-dot"></i></div> Adress</th>
+                <th><a class="ALink" href="https://maps.app.goo.gl/Tqb5P3sugFnrtwvx6">Naha,Okinawa,900-0024</a></th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-phone"></i></div> Phone</th>
+                <th>080-9856-5357</th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-clock"></i></div> Hour</th>
+                <th>24 Hours</th>
+            </tr>
+        </table>
+     </div>
+
+    <!-- Footer -->
+     <!-- Copyright -->
+      <div class="Copyright">
+        <small>&copy:GEMINI</small>
+        <p>Myanmar Traveling@Co.Ltd by Minthantzin</p>
+      </div>
+
+    
+</body>
+</html>

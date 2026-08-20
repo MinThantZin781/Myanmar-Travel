@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Travel around Myanmar">
+    <link rel="stylesheet" href="Main.css">
+
+    <!-- Googl font -->
+
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img class="LOGO" src="T-image/logo.jpg">
+            <h1>Myanmar Traveling</h1>
+        </div>
+        <div class="header-right">
+            <div class="container-Region">
+           <label for="regionSelect" class="Label-Region">Region</label>
+           <select id="regionSelect" onchange="goToRegionLink()">
+            <option value="Main.html" disabled selected> Search Region</option>
+            <option value="Yangon.html">Yangon</option>
+            <option value="Mandalay.html">Mandalay</option>
+            <option value="Sagaing.html">Sagaing</option>
+            <option value="Magway.html">Magway</option>
+            <option value="Bago.html">Bago</option>
+            <option value="Tanintharyi.html">Tanintharyi</option>
+            <option value="Ayeyarwady.Html">Ayeyarwady</option>
+            </select>
+            <script>
+                function goToRegionLink(){
+                    const selectElement =document.getElementById("regionSelect");
+                    const targetUrl =selectElement.value;
+
+                    if (targetUrl) {
+                        window.location.href = targetUrl;
+                    }
+                }
+            </script>
+            </div>
+                  <div class="container-State">
+           <label for="stateSelect" class="Label-State">State</label>
+           <select id="stateSelect" onchange="goToStateLink()">
+            <option value="Main.html" disabled selected> Search State</option>
+            <option value="Kachin.html">Kachin</option>
+            <option value="Kayah.html">Kayah</option>
+            <option value="Kayin.html">Kayin</option>
+            <option value="Chin.html">Chin</option>
+            <option value="Mon.html">Mon</option>
+            <option value="Rakhin.html">Rakhin</option>
+            <option value="Shan.html">Shan</option>
+            </select>
+               <script>
+                function goToStateLink(){
+                    const selectElement =document.getElementById("stateSelect");
+                    const targetUrl =selectElement.value;
+
+                    if (targetUrl) {
+                        window.location.href = targetUrl;
+                    }
+                }
+            </script>
+            </div>
+
+            <a class="Contact" href="Contact.html">Contact</a>
+            <a class="Contact" href="Help.html">Help<i class="fa-solid fa-circle-question"></i></a>
+            
+            
+        </div>
+    </div>
+    <!-- Middle -->
+    <!-- Places Grid Layout -->
+    <div class="places-grid">
+
+  <!-- Place 1: Putao Valley & Hkakabo Razi -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Putao Valley & Hkakabo Razi.jpg" alt="Putao Valley and Snow Capped Peaks">
+      <span class="place-badge">Top Attraction</span>
+    </div>
+    <div class="place-info">
+      <h3>1. Putao Valley & Mount Hkakabo Razi</h3>
+      
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Located in the far north of Myanmar, Putao is a secluded Himalayan valley surrounded by snow-capped mountains year-round. It serves as the gateway to Mount Hkakabo Razi (5,881 meters), Southeast Asia's highest peak, and offers world-class alpine trekking, white-water rafting, and endemic wildlife.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>October to April (Clear winter skies, crisp snow-peak views, and optimal trekking conditions)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Putao District, Far Northern Kachin State</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Flight to Putao + Guided Trekking Package: ~$300 - $800 USD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 2: Indawgyi Lake -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Indawgyi Lake.jpg" alt="Indawgyi Lake Floating Pagoda">
+    </div>
+    <div class="place-info">
+      <h3>2. Indawgyi Lake & Shwe Myitzu Pagoda</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Indawgyi Lake is the largest natural inland lake in Myanmar and a UNESCO Biosphere Reserve. It is famous for hosting thousands of migratory birds and the iconic Shwe Myitzu Pagoda, a floating golden shrine that appears to sit directly on the lake's surface.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>December to March (Peak migratory bird-watching season and clear kayaking weather)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Mohnyin Township, Southwestern Kachin State</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Free Lake Access / Kayak Rental or Boat Trip: ~15,000 - 30,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 3: Myitsone Confluence -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Myitsone Confluence.avif" alt="Myitsone River Confluence">
+    </div>
+    <div class="place-info">
+      <h3>3. Myitsone Confluence (Ayeyarwady River Origin)</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>The symbolic birthplace of Myanmar's mother river, the Ayeyarwady. Myitsone is the scenic confluence where the Mali and N'Mai rivers meet in a rush of clear turquoise waters against a backdrop of lush green mountain ridges.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>8:00 AM - 5:00 PM (Ideal day trip from Myitkyina; best water clarity in dry season)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>45 km north of Myitkyina, Kachin State</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Free Access / Local Motorbike or Car Taxi from Myitkyina: ~20,000 - 40,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 4: Myitkyina City & Manau Park -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Myitkyina City & Manau Park.jpg" alt="Myitkyina Manau Cultural Park Towers">
+    </div>
+    <div class="place-info">
+      <h3>4. Myitkyina City & Manau Park</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Myitkyina is the vibrant capital city of Kachin State situated along the Ayeyarwady River. The town center is famous for the Manau Park, featuring towering, colorfully carved ceremonial Manau poles used during traditional Kachin New Year celebrations.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>January (Kachin State Day & traditional Manau dance festival) or October to March</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Downtown Myitkyina, Kachin State</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Free Park Entry / Local Market Shopping & Food: ~5,000 - 15,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 5: Bhamo (Bamaw) -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Bhamo.png" alt="Bhamo River Trade Town">
+    </div>
+    <div class="place-info">
+      <h3>5. Bhamo (Bamaw Old River Town)</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>A historic border trading town set along the upper stretches of the Ayeyarwady River. Bhamo has centuries of history as a key trade hub between Myanmar and China, known for its scenic river gorges, wooden monasteries, and diverse ethnic markets.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>November to February (Best weather for river cruise journeys between Mandalay and Bhamo)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Bhamo District, Southern Kachin State</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Free City Exploration / Riverboat Passenger Ticket: ~15,000 - 35,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Back to Main Page Button -->
+<div class="back-home-container">
+  <a href="Main.html" class="back-main-btn">
+    <i class="fa-solid fa-house"></i> Back to Main Page
+  </a>
+</div>
+
+     <!-- Middle -->
+      <hr class="hr">
+    <!-- Footer -->
+     <div class="Footer">
+        <h3 class="Information"><i class="fa-solid fa-headset"></i> Information</h3>
+        <table class="Infor">
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-building"></i></div> Name</th>
+                <th>Myanmar Traveling@Co.Ltd</th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-location-dot"></i></div> Adress</th>
+                <th><a class="ALink" href="https://maps.app.goo.gl/Tqb5P3sugFnrtwvx6">Naha,Okinawa,900-0024</a></th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-phone"></i></div> Phone</th>
+                <th>080-9856-5357</th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-clock"></i></div> Hour</th>
+                <th>24 Hours</th>
+            </tr>
+        </table>
+     </div>
+
+    <!-- Footer -->
+     <!-- Copyright -->
+      <div class="Copyright">
+        <small>&copy:GEMINI</small>
+        <p>Myanmar Traveling@Co.Ltd by Minthantzin</p>
+      </div>
+
+    
+</body>
+</html>

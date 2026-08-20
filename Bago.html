@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Travel around Myanmar">
+    <link rel="stylesheet" href="Main.css">
+
+    <!-- Googl font -->
+
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img class="LOGO" src="T-image/logo.jpg">
+            <h1>Myanmar Traveling</h1>
+        </div>
+        <div class="header-right">
+            <div class="container-Region">
+           <label for="regionSelect" class="Label-Region">Region</label>
+           <select id="regionSelect" onchange="goToRegionLink()">
+            <option value="Main.html" disabled selected> Search Region</option>
+            <option value="Yangon.html">Yangon</option>
+            <option value="Mandalay.html">Mandalay</option>
+            <option value="Sagaing.html">Sagaing</option>
+            <option value="Magway.html">Magway</option>
+            <option value="Bago.html">Bago</option>
+            <option value="Tanintharyi.html">Tanintharyi</option>
+            <option value="Ayeyarwady.Html">Ayeyarwady</option>
+            </select>
+            <script>
+                function goToRegionLink(){
+                    const selectElement =document.getElementById("regionSelect");
+                    const targetUrl =selectElement.value;
+
+                    if (targetUrl) {
+                        window.location.href = targetUrl;
+                    }
+                }
+            </script>
+            </div>
+                  <div class="container-State">
+           <label for="stateSelect" class="Label-State">State</label>
+           <select id="stateSelect" onchange="goToStateLink()">
+            <option value="Main.html" disabled selected> Search State</option>
+            <option value="Kachin.html">Kachin</option>
+            <option value="Kayah.html">Kayah</option>
+            <option value="Kayin.html">Kayin</option>
+            <option value="Chin.html">Chin</option>
+            <option value="Mon.html">Mon</option>
+            <option value="Rakhin.html">Rakhin</option>
+            <option value="Shan.html">Shan</option>
+            </select>
+               <script>
+                function goToStateLink(){
+                    const selectElement =document.getElementById("stateSelect");
+                    const targetUrl =selectElement.value;
+
+                    if (targetUrl) {
+                        window.location.href = targetUrl;
+                    }
+                }
+            </script>
+            </div>
+
+            <a class="Contact" href="Contact.html">Contact</a>
+            <a class="Contact" href="Help.html">Help<i class="fa-solid fa-circle-question"></i></a>
+            
+            
+        </div>
+    </div>
+    <!-- Middle -->
+    <!-- Places Grid Layout -->
+    <div class="places-grid">
+
+  <!-- Place 1: Shwemawdaw Pagoda -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Shwemawdaw Pagoda.jpg" alt="Shwemawdaw Pagoda">
+      <span class="place-badge">Top Attraction</span>
+    </div>
+    <div class="place-info">
+      <h3>1. Shwemawdaw Pagoda</h3>
+      
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Known as the 'Great Golden God Pagoda', Shwemawdaw was built by the Mon people over 1,000 years ago. Standing at 114 meters, it is the tallest pagoda in Myanmar, even taller than Shwedagon Pagoda, and enshrines sacred hair relics of Gautama Buddha.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>6:00 AM - 8:00 AM / 4:30 PM - 7:00 PM (Best for cool weather and photography)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Pagan Road, Bago Township, Bago Region</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Bago Zone Fee: ~$10 USD (covers multiple sites) / Free for locals</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 2: Shwethalyaung Reclining Buddha -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Shwethalyaung Reclining Buddha.jpg" alt="Shwethalyaung Reclining Buddha">
+    </div>
+    <div class="place-info">
+      <h3>2. Shwethalyaung Reclining Buddha</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Built in 994 AD by Mon King Migadepa II, this magnificent 55-meter-long reclining Buddha image was lost to the jungle after Bago was destroyed in 1757. It was rediscovered in 1881 during British railway construction and restored to its full glory.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>8:00 AM - 5:00 PM (Sheltered pavilion, comfortable to visit anytime)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>West of Bago Downtown, Bago Region</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Included in Bago Zone Fee / Souvenirs: ~5,000 - 15,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 3: Kanbawzathadi Palace -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Kanbawzathadi Palace.jpg" alt="Kanbawzathadi Palace">
+    </div>
+    <div class="place-info">
+      <h3>3. Kanbawzathadi Palace</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Originally constructed in 1556 by King Bayinnaung, founder of the Hanthawaddy Empire (the second Myanmar Empire), this grand royal palace had 76 apartments and halls. The current golden structure is a faithful reconstruction built in the 1990s based on original excavation maps.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>9:00 AM - 4:30 PM (Explore the museum interior and teak throne rooms)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Palace Road, Bago Township, Bago Region</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Included in Bago Zone Ticket / Camera Fee: ~1,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 4: Kyaikpun Pagoda -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Kyaikpun Pagoda.jpg" alt="Kyaikpun Pagoda">
+    </div>
+    <div class="place-info">
+      <h3>4. Kyaikpun Pagoda</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Built by King Migadi in the 7th century and restored by King Dhammazedi in 1476, Kyaikpun is famous for its four 27-meter-tall Buddha statues seated back-to-back facing the four cardinal directions (Kakusandha, Konagamana, Kassapa, and Gautama).</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>8:00 AM - 11:00 AM / 3:30 PM - 5:30 PM (Great for outdoor photography)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>4 km southwest of Bago, on the Yangon-Bago highway</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Included in Bago Zone Fee / Tuk-tuk from Bago center: ~4,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place 5: Pyay Ancient City (Sri Ksetra) -->
+  <div class="place-card">
+    <div class="place-img-box">
+      <img src="T-image/Pyay Ancient City.jpg" alt="Sri Ksetra Pyu Ancient City">
+    </div>
+    <div class="place-info">
+      <h3>5. Sri Ksetra Pyu Ancient City (Pyay)</h3>
+
+      <div class="info-section">
+        <h4><i class="fa-solid fa-book-open"></i> History & Background</h4>
+        <p>Dating back from the 5th to the 9th century AD, Sri Ksetra was the largest capital of the ancient Pyu Kingdom. Recognized as a UNESCO World Heritage Site, it features ancient cylindrical brick stupas like Bawbawgyi and ancient burial mounds.</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Best Time to Visit</strong>
+            <span>8:00 AM - 4:00 PM (Rent a bicycle or motorbike to tour the ruins)</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div>
+            <strong>Location</strong>
+            <span>Hmawza Village, Pyay Township, Western Bago Region</span>
+          </div>
+        </div>
+
+        <div class="meta-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>Estimated Cost</strong>
+            <span>Site Entrance: ~5,000 MMK / Bicycle Rental: ~3,000 MMK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Back to Main Page Button -->
+<div class="back-home-container">
+  <a href="Main.html" class="back-main-btn">
+    <i class="fa-solid fa-house"></i> Back to Main Page
+  </a>
+</div>
+
+
+     <!-- Middle -->
+      <hr class="hr">
+    <!-- Footer -->
+     <div class="Footer">
+        <h3 class="Information"><i class="fa-solid fa-headset"></i> Information</h3>
+        <table class="Infor">
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-building"></i></div> Name</th>
+                <th>Myanmar Traveling@Co.Ltd</th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-location-dot"></i></div> Adress</th>
+                <th><a class="ALink" href="https://maps.app.goo.gl/Tqb5P3sugFnrtwvx6">Naha,Okinawa,900-0024</a></th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-phone"></i></div> Phone</th>
+                <th>080-9856-5357</th>
+            </tr>
+            <tr>
+                <th><div class="icon-box"><i class="fa-solid fa-clock"></i></div> Hour</th>
+                <th>24 Hours</th>
+            </tr>
+        </table>
+     </div>
+
+    <!-- Footer -->
+     <!-- Copyright -->
+      <div class="Copyright">
+        <small>&copy:GEMINI</small>
+        <p>Myanmar Traveling@Co.Ltd by Minthantzin</p>
+      </div>
+
+    
+</body>
+</html>
